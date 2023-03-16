@@ -8,7 +8,7 @@ import ProfileMenuDrop from "./profilemenudrop";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const isHome = useLocation().pathname == "/"
+  const isHome = useLocation().pathname == ("/")
 
   return (
     <div className="menu">

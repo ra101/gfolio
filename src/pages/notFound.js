@@ -1,47 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./notFound.css";
-import FilterMenu from "../components/filtermenu";
+import Logo from "../components/logo";
+import { Link, useLocation } from "react-router-dom";
+import nfBot from "../images/notfound.png"
+import "./notFound.css"
 
 function NotFound() {
-  // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
-  var rx = /[^/](.*)/g;
-  var arr = rx.exec(urlPathname);
-  let val = " ";
-  if (arr) {
-    val = arr[0];
-  }
-
   return (
-    <div className="main">
-            <FilterMenu />
-      <div className="all-results-container notfound-page">
-        <div className="suggest">
-          <p> Did you mean: </p>
-          <div className="suggestions">
-            <Link to="/all"> all </Link>
-            <Link to="/about"> about </Link>
-            <Link to="/works"> works </Link>
-            <Link to="/social"> social </Link>
-            <Link to="/writing"> writing </Link>
-          </div>
-        </div>
-        <div className="notfound-details">
-          <p> No results containing all your search terms were found.</p>
-          <p>
-            {" "}
-            Your search - <b> {decodeURI(val)} </b> - did not match any documents.
-          </p>
-          <p> Suggestions: </p>
-          <ul>
-            <li>Try a different keyword from the search dropdown</li>
-            <li>Make sure that all words are spelled correctly.</li>
-            <li>Click one of the links from the suggestions or menu above</li>
-          </ul>
-        </div>
+    <div className="nf-grid">
+    <div className="nf-grid-col1">
+      <Link to="/" style={{ textDecoration: "none", fontSize: "1rem"}}>
+          <Logo />
+      </Link>
+
+      <div><b>404.</b><span className="gray"> That’s an error.</span><br /><br />
+        <span>The requested URL {useLocation().pathname} was not found on this server.</span>
+        <span className="gray"> That’s all we know.</span>
       </div>
     </div>
-  );
+    <div className="nf-grid-col2">
+      <img src={nfBot} />
+    </div>
+    </div>
+    );
 }
 export default NotFound;

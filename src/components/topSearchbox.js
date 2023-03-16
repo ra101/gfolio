@@ -6,7 +6,7 @@ import {
   faTimes,
   faHistory
 } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter as Router, Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import MobileSearch from "./mobileSearch";
 
 const TopSearchBox = () => {
@@ -25,13 +25,9 @@ const TopSearchBox = () => {
   ];
 
   // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
-  var rx = /[^/](.*)/g;
-  var arr = rx.exec(urlPathname);
-  let val = "";
-  if (arr) {
-    val = arr[0];
-  }
+  let val = new URLSearchParams(
+    useLocation().search
+  ).get('q');
 
   const imgStyle = {
     verticalAlign: "middle",

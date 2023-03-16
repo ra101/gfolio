@@ -2,6 +2,7 @@ import "../styles.css";
 import "../search.css";
 import React, { useEffect } from "react";
 import Logo from "../components/logo";
+import Layout from "../components/layout";
 import SearchBox from "../components/searchbox";
 import { useHistory } from "react-router-dom";
 import { Content } from "../data/content";
@@ -71,6 +72,7 @@ function Home() {
   }
 
   return (
+    <Layout>
     <div className="home main">
       <div className="flex-center">
       <div className="search-container">
@@ -95,6 +97,7 @@ function Home() {
       </div>
       </div>
     </div>
+    </Layout>
   );
 }
 export default Home;
