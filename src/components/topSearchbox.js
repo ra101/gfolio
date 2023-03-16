@@ -162,17 +162,17 @@ const TopSearchBox = () => {
       </div>
       <div className="topmenu-search-box search-box">
         <div className="search-cont">
-        <FontAwesomeIcon 
-        className="fa fa-search-left" 
+        <FontAwesomeIcon
+        className="fa fa-search-left"
         icon={faSearch} />
-        
+
           <div className="search">
             <div className="search-value">
               <input
                 placeholder=" "
                 autoComplete="on"
                 className="search-input"
-                defaultValue={val}
+                defaultValue={decodeURI(val)}
                 onFocus={showOptions}
                 onBlur={hideOptions}
                 onChange={clearValue}

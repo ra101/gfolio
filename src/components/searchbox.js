@@ -184,7 +184,7 @@ const SearchBox = (props) => {
                 placeholder=" "
                 autoComplete="on"
                 className="search-input"
-                defaultValue={val}
+                defaultValue={decodeURI(val)}
                 onFocus={showOptions}
                 onBlur={hideOptions}
                 onChange={clearValue}

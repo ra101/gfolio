@@ -143,7 +143,7 @@ const MobileSearch = () => {
               placeholder=" "
               autoComplete="on"
               className="mobile-search-input"
-              defaultValue={val}
+              defaultValue={decodeURI(val)}
               onChange={clearValue}
             />
             <FontAwesomeIcon

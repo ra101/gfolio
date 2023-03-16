@@ -35,7 +35,7 @@ function NotFound() {
           <p> No results containing all your search terms were found.</p>
           <p>
             {" "}
-            Your search - <b> {val} </b> - did not match any documents.
+            Your search - <b> {decodeURI(val)} </b> - did not match any documents.
           </p>
           <p> Suggestions: </p>
           <ul>
