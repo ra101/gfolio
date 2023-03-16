@@ -7,7 +7,6 @@ body {
   margin-left: 180px;
   max-width: 650px;
   margin-bottom: 20px;
-  min-height: 80vh;
 }
 
 @media screen and (max-width: 768px) {

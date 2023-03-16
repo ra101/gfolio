@@ -67,11 +67,10 @@
   background-color: #edf7fc;
 }
 
-.dropdown:hover .profile-hightlight-dropdown {
+.dropdown:hover .profile-highlight-dropdown {
   display: block;
 }
 
 .fa-th:hover {
   background: #eee;
 }
-

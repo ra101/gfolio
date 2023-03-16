@@ -3,6 +3,8 @@
 .search-box {
   position: relative;
   margin: 0 20px;
+  z-index: 3;
+
 }
 .fa {
   position: absolute;
@@ -18,7 +20,7 @@
 
 .searchbox-icons {
   position: absolute;
-  z-index: 2;
+  z-index: 6;
  font-size: 20px;
   top: 6px;
   right: 10px;

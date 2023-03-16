@@ -41,12 +41,12 @@ const AccordionComponent = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                I enjoy reading fiction stories and philosophy. 
-                When I'm not reading for leisure, I spend my free time 
+                I enjoy reading fiction stories and philosophy.
+                When I'm not reading for leisure, I spend my free time
                 writing about random stuff. I also like listening to music,
                 especially jip hop, R&B and drill. My favorite artists are
-                Juice WRLD, Lil Tecca, JayDaYoungan, Yungeen Ace, SL, 
-                Meekz Manny and Fredo. 
+                Juice WRLD, Lil Tecca, JayDaYoungan, Yungeen Ace, SL,
+                Meekz Manny and Fredo.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -62,8 +62,8 @@ const AccordionComponent = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes. I am always open to work on innovate projects with 
-                creative projects. 
+                Yes. I am always open to work on innovate projects with
+                creative projects.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -79,7 +79,7 @@ const AccordionComponent = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-               Definitely email. Contact me at enjeckc1e0@gmail.com.
+               Definitely email. Contact me at ping@ra101.dev.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -95,7 +95,7 @@ const AccordionComponent = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-              Meeting deadlines, targets or goals. mentoring and coaching others, learning new things, 
+              Meeting deadlines, targets or goals. mentoring and coaching others, learning new things,
               coming up with creative ideas to improve something, and making something new.
               </Typography>
             </AccordionDetails>
