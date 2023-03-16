@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./notFound.css";
-import AllResultsCard from "../components/allResultsCard";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import FilterMenu from "../components/filtermenu";
 
 function NotFound() {
@@ -18,7 +15,7 @@ function NotFound() {
 
   return (
     <div className="main">
-      <FilterMenu />
+            <FilterMenu />
       <div className="all-results-container notfound-page">
         <div className="suggest">
           <p> Did you mean: </p>

@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import { ProjectsContent } from "../data/projectsContent";
 import "./projectsPage.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+;
 import FilterMenu from "../components/filtermenu";
 
 const ProjectsPage = ({ results }) => {
   return (
     <div className="main">
-      <FilterMenu />
+            <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
           About {ProjectsContent.length} results (0.84 seconds)

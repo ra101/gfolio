@@ -1,14 +1,12 @@
 import React from "react";
 import { ImagesContent } from "../data/imagesContent";
 import "./imagesPage.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import FilterMenu from "../components/filtermenu";
 
 const ImagesPage = ({ results }) => {
   return (
     <div className="main">
-      <FilterMenu />
+            <FilterMenu />
       <div className="images-content">
         {ImagesContent.map((item) => (
           <div className="images--card">

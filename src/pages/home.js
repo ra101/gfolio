@@ -1,13 +1,10 @@
 import "../styles.css";
 import "../search.css";
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import Logo from "../components/logo";
 import SearchBox from "../components/searchbox";
-import BoxMenuDrop from "../components/boxmenudrop";
-import ProfileMenuDrop from "../components/profilemenudrop";
 import { useHistory } from "react-router-dom";
 import { Content } from "../data/content";
-import { Link } from "react-router-dom";
 
 function Home() {
   const history = useHistory();
@@ -75,7 +72,7 @@ function Home() {
 
   return (
     <div className="home main">
-     <div className="flex-center">
+      <div className="flex-center">
       <div className="search-container">
         <div className="frontpage-logo">
           <Logo />
