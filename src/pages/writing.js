@@ -1,7 +1,6 @@
 import React from "react";
 import { Content } from "../data/content";
 import AllResultsCard from "../components/allResultsCard";
-;
 import FilterMenu from "../components/filtermenu";
 
 function Writing() {

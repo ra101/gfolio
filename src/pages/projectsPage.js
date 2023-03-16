@@ -1,7 +1,6 @@
 import React from "react";
 import { ProjectsContent } from "../data/projectsContent";
 import "./projectsPage.css";
-;
 import FilterMenu from "../components/filtermenu";
 
 const ProjectsPage = ({ results }) => {
