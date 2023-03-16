@@ -86,7 +86,6 @@ const MobileSearch = () => {
         searchWebsite();
         // Show the enter screen, which was cropped while the search screen was active
         document.querySelector("body").style.height = "100%";
-        document.querySelector("body").style.overflow = "scroll";
       }
     });
 
@@ -106,7 +105,6 @@ const MobileSearch = () => {
     document.querySelector(".mobile-search-box").style.display = "none";
     // Unhide the rest of the body
     document.querySelector("body").style.height = "100%";
-    document.querySelector("body").style.overflow = "scroll";
   }
 
   function useOutsideHandler(ref) {
@@ -115,7 +113,6 @@ const MobileSearch = () => {
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
           document.querySelector("body").style.height = "100%";
-       document.querySelector("body").style.overflow = "scroll";
         }
       }
 
