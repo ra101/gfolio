@@ -75,18 +75,6 @@ function Home() {
 
   return (
     <div className="home main">
-      <div className="top-menu">
-        <span className="top-menu-item no-show-mobile">
-          {" "}
-          <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
-        </span>
-        <span className="top-menu-item no-show-mobile">
-          {" "}
-          <a href="https://github.com/enjeck"> GitHub </a>
-        </span>
-        <BoxMenuDrop />
-        <ProfileMenuDrop />
-      </div>
      <div className="flex-center">
       <div className="search-container">
         <div className="frontpage-logo">
@@ -109,36 +97,6 @@ function Home() {
         </div>
       </div>
       </div>
-
-      <footer className="footer">
-        <div className="country">
-          Cameroon
-        </div>
-        <div className="footer-links">
-          <div className="footer-links-section">
-            <Link to="/about"> About </Link>
-            <Link to="/projects"> Projects </Link>
-            <Link to="/blog"> Blog</Link>
-            <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
-          </div>
-          <div className="footer-links-section">
-            <a href="https://github.com/enjeck"> GitHub </a>
-            <a href="https://www.linkedin.com/in/c1e0/"> LinkedIn </a>
-            <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
-            {/* <div className="settings-dropdown">
-              <button className="settings-dropbtn"> Settings </button>
-              <div className="settings-dropdown-content">
-                <a href="/">Link 1</a>
-                <a href="/">Link 2</a>
-                <a href="/">Link 3</a>
-                <a className="dark-mode-btn" href="/">
-                  Link 4
-                </a>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -11,7 +11,6 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 const BlogPage = ({ results }) => {
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container blogpage-container">
         <p className="result-count">
@@ -36,7 +35,6 @@ const BlogPage = ({ results }) => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

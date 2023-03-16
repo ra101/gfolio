@@ -18,7 +18,6 @@ function NotFound() {
 
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container notfound-page">
         <div className="suggest">
@@ -45,7 +44,6 @@ function NotFound() {
           </ul>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

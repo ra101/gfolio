@@ -11,7 +11,6 @@ function About() {
   const about = Content.filter((item) => item.category === "about");
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
@@ -19,7 +18,6 @@ function About() {
         </p>
         <AllResultsCard results={about} />
       </div>
-      <Footer />
     </div>
   );
 }

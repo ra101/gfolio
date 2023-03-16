@@ -11,7 +11,6 @@ function Social() {
   const contact = Content.filter((item) => item.category === "social");
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
@@ -19,7 +18,6 @@ function Social() {
         </p>
         <AllResultsCard results={contact} />
       </div>
-      <Footer />
     </div>
   );
 }

@@ -9,7 +9,6 @@ import FilterMenu from "../components/filtermenu";
 const ProjectsPage = ({ results }) => {
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
@@ -35,7 +34,6 @@ const ProjectsPage = ({ results }) => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

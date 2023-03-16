@@ -8,6 +8,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import Layout from "./components/layout";
 import about from "./pages/about";
 import works from "./pages/works";
 import Home from "./pages/home";
@@ -23,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/all" component={AllResults} />
@@ -35,6 +37,7 @@ class App extends Component {
           <Route path="/blog" component={BlogPage} />
           <Route component={NotFound} />
         </Switch>
+        </Layout>
       </Router>
     );
   }

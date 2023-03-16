@@ -8,7 +8,6 @@ import FilterMenu from "../components/filtermenu";
 const ImagesPage = ({ results }) => {
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="images-content">
         {ImagesContent.map((item) => (
@@ -23,7 +22,6 @@ const ImagesPage = ({ results }) => {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 };

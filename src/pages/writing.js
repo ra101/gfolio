@@ -11,7 +11,6 @@ function Writing() {
   const writing = Content.filter((item) => item.category === "writing");
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
@@ -19,7 +18,6 @@ function Writing() {
         </p>
         <AllResultsCard results={writing} />
       </div>
-      <Footer />
     </div>
   );
 }

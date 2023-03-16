@@ -7,12 +7,10 @@ import All from "../components/all";
 function AllResults() {
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-container">
         <All />
       </div>
-      <Footer />
     </div>
   );
 }

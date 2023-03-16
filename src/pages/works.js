@@ -11,7 +11,6 @@ function Works() {
   const works = Content.filter((item) => item.category === "works");
   return (
     <div className="main">
-      <Header />
       <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
@@ -19,7 +18,6 @@ function Works() {
         </p>
         <AllResultsCard results={works} />
       </div>
-      <Footer />
     </div>
   );
 }
