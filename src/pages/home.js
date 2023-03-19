@@ -67,7 +67,7 @@ function Home() {
       const url = item[0].link;
       window.location.href = url;
     } else if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   }
 

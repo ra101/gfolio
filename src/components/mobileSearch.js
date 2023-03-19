@@ -63,7 +63,7 @@ const MobileSearch = () => {
   const searchWebsite = () => {
     let path = document.querySelector(".mobile-search-input").value;
     if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   };
 
@@ -157,7 +157,7 @@ const MobileSearch = () => {
                   <span>
                     <span>
                       <FontAwesomeIcon className="clock-icon" icon={faClock} />
-                      <Link to={`/${option.value}`}>{option.name}</Link>
+                      <Link to={`/search/?q=${option.value}`}>{option.name}</Link>
                     </span>
                     <FontAwesomeIcon
                       className="delete-icon"

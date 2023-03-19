@@ -161,7 +161,7 @@ const SearchBox = (props) => {
       const url = item[0].link;
       useLocation().href = url;
     } else if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   }
 
@@ -196,7 +196,7 @@ const SearchBox = (props) => {
                         icon={faHistory}
                         style={imgStyle}
                       />
-                      <Link to={`/${option.value}`}>{option.name}</Link>
+                      <Link to={`/search/?q=${option.value}`}>{option.name}</Link>
                       <span>
                         <button
                           className="remove-btn"

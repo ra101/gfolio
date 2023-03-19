@@ -105,7 +105,7 @@ const TopSearchBox = () => {
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
     if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   };
 
@@ -183,7 +183,7 @@ const TopSearchBox = () => {
                         icon={faHistory}
                         style={imgStyle}
                       />
-                      <Link to={`/${option.value}`}>{option.name}</Link>
+                      <Link to={`/search/?q=${option.value}`}>{option.name}</Link>
                       <span>
                         <button
                           className="remove-btn"
