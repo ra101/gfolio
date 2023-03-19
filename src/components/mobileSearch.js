@@ -7,7 +7,7 @@ import {
   faArrowLeft
 } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import { BrowserRouter as Router, Link, useHistory } from "react-router-dom";
+import { useLocation, Link, useHistory } from "react-router-dom";
 
 const MobileSearch = () => {
 
@@ -20,14 +20,14 @@ const MobileSearch = () => {
       name: "about",
       value: "about"
     },
-    { name: "works", value: "works" },
-    { name: "writing", value: "writing" },
+    { name: "projects", value: "projects" },
+    { name: "blogs", value: "blogs" },
     { name: "images", value: "images" },
     { name: "social", value: "social" }
   ];
 
   // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
+  const urlPathname = useLocation().pathname;
   var rx = /[^/](.*)/g;
   var arr = rx.exec(urlPathname);
   let val = "";

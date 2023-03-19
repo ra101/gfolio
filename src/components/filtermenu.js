@@ -3,10 +3,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
-  faImage,
   faNewspaper,
   faMapMarkerAlt,
-  faBriefcase
+  faBriefcase,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -19,14 +19,12 @@ const FilterMenu = () => {
         <NavLink
           className="filter-menu-item"
           to="/search/?q=all"
-          activeClassName="item-active"
         >
           <FontAwesomeIcon className="icon" icon={faSearch} />
           <span> All </span>
         </NavLink>
         <NavLink
           to="/search/?q=projects"
-          activeClassName="item-active"
           className="filter-menu-item fmi"
         >
           <FontAwesomeIcon className="icon" icon={faBriefcase} />
@@ -35,28 +33,24 @@ const FilterMenu = () => {
         <NavLink
           className="filter-menu-item fmi"
           to="/search/?q=images"
-          activeClassName="item-active"
         >
-          <FontAwesomeIcon className="icon" icon={faImage} />
-          <span> Images </span>
+          <FontAwesomeIcon className="icon" icon={faVideo} />
+          <span> Videos </span>
         </NavLink>
         <NavLink
           className="filter-menu-item fmi"
           to="/search/?q=blog"
-          activeClassName="item-active"
         >
           <FontAwesomeIcon className="icon" icon={faNewspaper} />
           <span> News </span>
         </NavLink>
-        {/* <NavLink
-          className="filter-menu-item"
-          exact
-          to="/maps"
-          activeClassName="item-active"
+        <NavLink
+          className="filter-menu-item fmi"
+          to="/search/?q=social"
         >
           <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
           <span> Maps </span>
-        </NavLink> */}
+        </NavLink>
       </div>
     </div>
   );

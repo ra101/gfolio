@@ -3,7 +3,7 @@ import { ImagesContent } from "../data/imagesContent";
 import "./imagesPage.css";
 import FilterMenu from "../components/filtermenu";
 
-const ImagesPage = ({ results }) => {
+const ImagesPage = () => {
   return (
     <div className="main">
             <FilterMenu />

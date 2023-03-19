@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./unMached.css";
 import FilterMenu from "../components/filtermenu";
 
 function UnMached() {
   // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
+  const urlPathname = new URLSearchParams(useLocation().search);
   var rx = /[^/](.*)/g;
-  var arr = rx.exec(urlPathname);
+  var arr = rx.exec(urlPathname.get('q'));
   let val = " ";
   if (arr) {
     val = arr[0];
@@ -21,10 +21,10 @@ function UnMached() {
           <p> Did you mean: </p>
           <div className="suggestions">
             <Link to="/search/?q=all"> all </Link>
-            <Link to="/about"> about </Link>
-            <Link to="/works"> works </Link>
-            <Link to="/social"> social </Link>
-            <Link to="/writing"> writing </Link>
+            <Link to="/search/?q=about"> about </Link>
+            <Link to="/search/?q=projects"> projects </Link>
+            <Link to="/search/?q=social"> social </Link>
+            <Link to="/search/?q=blogs"> blogs </Link>
           </div>
         </div>
         <div className="unmached-details">

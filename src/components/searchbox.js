@@ -6,18 +6,14 @@ import {
   faTimes,
   faHistory
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  BrowserRouter as Router,
-  Link,
-  useHistory
-} from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import MobileSearch from "./mobileSearch";
 import { Content } from "../data/content";
 
 const SearchBox = (props) => {
 
   // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
+  const urlPathname = useLocation().pathname;
   var rx = /[^/](.*)/g;
   var arr = rx.exec(urlPathname);
   let val = "";
@@ -143,7 +139,7 @@ const SearchBox = (props) => {
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
     if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   };
 
@@ -163,7 +159,7 @@ const SearchBox = (props) => {
     // Redirect to first match, if it exists
     if (item[0]) {
       const url = item[0].link;
-      window.location.href = url;
+      useLocation().href = url;
     } else if (path) {
       history.push(path);
     }
@@ -227,7 +223,7 @@ const SearchBox = (props) => {
                   <input
                     className="search-btn sw"
                     type="button"
-                    value="Search Website"
+                    value="Google Search"
                     onClick={searchWebsite}
                   />
                   <input

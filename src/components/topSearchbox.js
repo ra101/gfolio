@@ -19,15 +19,13 @@ const TopSearchBox = () => {
       name: "about",
       value: "about"
     },
-    { name: "works", value: "works" },
-    { name: "writing", value: "writing" },
+    { name: "projects", value: "projects" },
+    { name: "blogs", value: "blogs" },
     { name: "social", value: "social" }
   ];
 
   // Get url pathname to use as search value
-  let val = new URLSearchParams(
-    useLocation().search
-  ).get('q');
+  let val = new URLSearchParams(useLocation().search).get('q');
 
   const imgStyle = {
     verticalAlign: "middle",
@@ -58,7 +56,7 @@ const TopSearchBox = () => {
       document.querySelector(".mobile-search-box").style.display = "block";
       /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
-      
+
       /* Hide body */
       document.querySelector("body").style.height = "100vh";
       document.querySelector("body").style.overflow = "hidden";
@@ -67,7 +65,7 @@ const TopSearchBox = () => {
       document.querySelector(".mobile-search-input").focus()
     }
     document.querySelector(".fa-search-left").style.display = "block";
-  
+
   }
 
   function hideOptions() {

@@ -21,8 +21,8 @@ function Home() {
       name: "about",
       value: "about"
     },
-    { name: "works", value: "works" },
-    { name: "writing", value: "writing" },
+    { name: "projects", value: "projects" },
+    { name: "blogs", value: "blogs" },
     { name: "images", value: "images" },
     { name: "social", value: "social" }
   ];
@@ -32,7 +32,7 @@ function Home() {
     let path = document.querySelector(".search-input").value;
     // When search is triggered, add the value entered into the search bar to the url
     if (path) {
-      history.push(path);
+      history.push("/search/?q=" + path);
     }
   };
 
@@ -84,7 +84,7 @@ function Home() {
           <input
             className="search-btn sw"
             type="button"
-            value="Search Website"
+            value="Google Search"
             onClick={searchWebsite}
           />
           <input
