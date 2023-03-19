@@ -11,6 +11,11 @@ export default function ProjectsPage() {
   ).get('start');
 
   const [repoData, setRepoData] = useState([]);
+  const [resTime, setResTime] = useState(0);
+  const weight = (i)=> {return parseInt(
+    (i.stargazers_count + i.forks_count + i.watchers_count)/3
+  )}
+
   // https://api.github.com/users/ra101/repos?per_page=1000
   // https://opengraph.githubassets.com/0/ra101/kissSolver
 
@@ -18,10 +23,13 @@ export default function ProjectsPage() {
 
   (async () => {
     if (!repoData.length){
+      const start = window.performance.now();
       const response = await fetch("https://api.github.com/users/ra101/repos?per_page=1000");
       if (response.status == 200){
         const data = await response.json();
+        data.sort((a,b) => { return weight(b) - weight(a)});
         setRepoData(data);
+        setResTime(parseInt(window.performance.now() - start))
       }
     }
   })();
@@ -33,7 +41,7 @@ export default function ProjectsPage() {
             <FilterMenu />
       <div className="all-results-container">
         <p className="result-count">
-          About {repoData.length} results (0.84 seconds)
+          About {repoData.length} results ({resTime/1000} seconds)
         </p>
         <div className="projects-content">
           {repoData.map((item) => (
