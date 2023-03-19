@@ -29,7 +29,7 @@
 .projects-card a p {
   color: #111;
   margin-bottom: 7px;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 @supports (-webkit-line-clamp: 2) {
@@ -80,6 +80,7 @@
   padding: 0;
   color: #555;
 }
+
 
 @media screen and (max-width: 768px) {
   .projects-content {
