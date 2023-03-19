@@ -20,7 +20,7 @@ function UnMached() {
         <div className="suggest">
           <p> Did you mean: </p>
           <div className="suggestions">
-            <Link to="/all"> all </Link>
+            <Link to="/search/?q=all"> all </Link>
             <Link to="/about"> about </Link>
             <Link to="/works"> works </Link>
             <Link to="/social"> social </Link>

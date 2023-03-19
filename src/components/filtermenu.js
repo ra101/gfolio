@@ -18,14 +18,14 @@ const FilterMenu = () => {
       <div className="filter-menu-items">
         <NavLink
           className="filter-menu-item"
-          to="/all"
+          to="/search/?q=all"
           activeClassName="item-active"
         >
           <FontAwesomeIcon className="icon" icon={faSearch} />
           <span> All </span>
         </NavLink>
         <NavLink
-          to="/projects"
+          to="/search/?q=projects"
           activeClassName="item-active"
           className="filter-menu-item fmi"
         >
@@ -34,7 +34,7 @@ const FilterMenu = () => {
         </NavLink>
         <NavLink
           className="filter-menu-item fmi"
-          to="/images"
+          to="/search/?q=images"
           activeClassName="item-active"
         >
           <FontAwesomeIcon className="icon" icon={faImage} />
@@ -42,7 +42,7 @@ const FilterMenu = () => {
         </NavLink>
         <NavLink
           className="filter-menu-item fmi"
-          to="/blog"
+          to="/search/?q=blog"
           activeClassName="item-active"
         >
           <FontAwesomeIcon className="icon" icon={faNewspaper} />

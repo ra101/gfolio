@@ -72,7 +72,7 @@ const ProfileMenuDrop = () => {
         </div>
         <div className="fourth-detail">
           <a href="https://github.com/PROTechThor/gfolio"> View code </a> <span> • </span>
-          <Link to="/blog"> Blog & news </Link>
+          <Link to="/search/?q=blog"> Blog & news </Link>
         </div>
       </div>
     </div>

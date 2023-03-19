@@ -153,7 +153,7 @@ const SearchBox = (props) => {
 
     // Route to random page if search input is empty
     if (!path) {
-      history.push(`/${props.options[Math.floor(Math.random() * props.options.length)].value}`);
+      history.push(`/search/?q=${props.options[Math.floor(Math.random() * props.options.length)].value}`);
       return;
     }
 

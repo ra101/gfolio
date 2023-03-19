@@ -54,7 +54,7 @@ function Home() {
 
     // Route to random page if search input is empty
     if (!path) {
-      history.push(`/${options[Math.floor(Math.random() * options.length)].value}`);
+      history.push(`/search/?q=${options[Math.floor(Math.random() * options.length)].value}`);
       return;
     }
 

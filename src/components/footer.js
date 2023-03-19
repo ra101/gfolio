@@ -23,8 +23,8 @@ const Footer = () => {
     <div className="footer-links">
       <div className="footer-links-section">
         <Link to="/about"> About </Link>
-        <Link to="/projects"> Projects </Link>
-        <Link to="/blog"> Blog</Link>
+        <Link to="/search/?q=projects"> Projects </Link>
+        <Link to="/search/?q=blog"> Blog</Link>
         <a href="mailto:ping@ra101.dev"> Email </a>
       </div>
       <div className="footer-links-section">
