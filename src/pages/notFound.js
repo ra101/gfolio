@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../components/logo";
 import { Link, useLocation } from "react-router-dom";
-import nfBot from "../images/notfound.png"
+import nfBot from "../images/not-found.png"
 import "./notFound.css"
 
 function NotFound() {
