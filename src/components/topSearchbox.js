@@ -1,5 +1,5 @@
 import "./topSearchbox.css";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -48,8 +48,6 @@ const TopSearchBox = () => {
     padding: "10px",
     cursor: "pointer"
   };
-
-  const [isSearchActive, setSearchActive] = useState("false");
 
   function showOptions() {
     let el = document.querySelector(".search-select");
