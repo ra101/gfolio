@@ -23,7 +23,7 @@ const MobileSearch = () => {
     { name: "projects", value: "projects" },
     { name: "blogs", value: "blogs" },
     { name: "images", value: "images" },
-    { name: "social", value: "social" }
+    { name: "socials", value: "socials" }
   ];
 
   // Get url pathname to use as search value
@@ -36,7 +36,7 @@ const MobileSearch = () => {
   }
 
   useEffect(() => {
-    // Show the clear button when the search bar is nonempty. Otherwise, hide it. 
+    // Show the clear button when the search bar is nonempty. Otherwise, hide it.
     const clearBtn = document.querySelector(".mobile-clear-icon");
     let input = document.querySelector(".mobile-search-input").value;
     if (input) {

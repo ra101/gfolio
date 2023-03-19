@@ -21,7 +21,7 @@ const TopSearchBox = () => {
     },
     { name: "projects", value: "projects" },
     { name: "blogs", value: "blogs" },
-    { name: "social", value: "social" }
+    { name: "socials", value: "socials" }
   ];
 
   // Get url pathname to use as search value

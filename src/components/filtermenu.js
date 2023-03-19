@@ -46,7 +46,7 @@ const FilterMenu = () => {
         </NavLink>
         <NavLink
           className="filter-menu-item fmi"
-          to="/search/?q=social"
+          to="/search/?q=socials"
         >
           <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
           <span> Maps </span>

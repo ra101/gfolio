@@ -24,7 +24,7 @@ function Home() {
     { name: "projects", value: "projects" },
     { name: "blogs", value: "blogs" },
     { name: "images", value: "images" },
-    { name: "social", value: "social" }
+    { name: "socials", value: "socials" }
   ];
 
   // Website search

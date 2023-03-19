@@ -5,7 +5,7 @@ import { Redirect, useLocation } from "react-router-dom";
 import Layout from "./components/layout";
 import AllResults from "./pages/allResults";
 import About from "./pages/about";
-import Social from "./pages/social";
+import Socials from "./pages/socials";
 import ProjectsPage from "./pages/projectsPage";
 import ImagesPage from "./pages/imagesPage";
 import BlogPage from "./pages/blogPage";
@@ -24,7 +24,7 @@ export default function Search() {
   const intendDict = {
     "all":AllResults,
     "about":About,
-    "social":Social,
+    "socials":Socials,
     "projects":ProjectsPage,
     "images":ImagesPage,
     "blog":BlogPage,

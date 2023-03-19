@@ -3,8 +3,8 @@ import { Content } from "../data/content";
 import AllResultsCard from "../components/allResultsCard";
 import FilterMenu from "../components/filtermenu";
 
-function Social() {
-  const contact = Content.filter((item) => item.category === "social");
+function Socials() {
+  const contact = Content.filter((item) => item.category === "socials");
   return (
     <div className="main">
             <FilterMenu />
@@ -17,4 +17,4 @@ function Social() {
     </div>
   );
 }
-export default Social;
+export default Socials;

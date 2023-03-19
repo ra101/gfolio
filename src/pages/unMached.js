@@ -23,7 +23,7 @@ function UnMached() {
             <Link to="/search/?q=all"> all </Link>
             <Link to="/search/?q=about"> about </Link>
             <Link to="/search/?q=projects"> projects </Link>
-            <Link to="/search/?q=social"> social </Link>
+            <Link to="/search/?q=socials"> socials </Link>
             <Link to="/search/?q=blogs"> blogs </Link>
           </div>
         </div>
