@@ -5,7 +5,7 @@ import {
   faSearch,
   faNewspaper,
   faMapMarkerAlt,
-  faBriefcase,
+  faLaptopCode,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
@@ -27,7 +27,7 @@ const FilterMenu = () => {
           to="/search/?q=projects"
           className="filter-menu-item fmi"
         >
-          <FontAwesomeIcon className="icon" icon={faBriefcase} />
+          <FontAwesomeIcon className="icon" icon={faLaptopCode} />
           <span> Projects </span>
         </NavLink>
         <NavLink
