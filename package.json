@@ -1,6 +1,7 @@
 {
   "name": "gfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "homepage": "https://google.ra101.dev",
   "description": "Personal website simulating Google Search interface, developed with React",
   "keywords": [
     "react",
