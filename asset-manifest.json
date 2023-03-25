@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8bcf0126.chunk.css",
+    "main.js": "/static/js/main.e99148f0.chunk.js",
+    "main.js.map": "/static/js/main.e99148f0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7ea61961.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7ea61961.js.map",
+    "static/js/2.d1380e9b.chunk.js": "/static/js/2.d1380e9b.chunk.js",
+    "static/js/2.d1380e9b.chunk.js.map": "/static/js/2.d1380e9b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8bcf0126.chunk.css.map": "/static/css/main.8bcf0126.chunk.css.map",
+    "static/js/2.d1380e9b.chunk.js.LICENSE.txt": "/static/js/2.d1380e9b.chunk.js.LICENSE.txt",
+    "static/media/CryptographyVisualizer.873e9d90.png": "/static/media/CryptographyVisualizer.873e9d90.png",
+    "static/media/blobby.6b3f6eb6.png": "/static/media/blobby.6b3f6eb6.png",
+    "static/media/geo-guess.21a94994.png": "/static/media/geo-guess.21a94994.png",
+    "static/media/gfolio.4b968882.png": "/static/media/gfolio.4b968882.png",
+    "static/media/info.df517275.png": "/static/media/info.df517275.png",
+    "static/media/jpg2svg.e3e3744c.png": "/static/media/jpg2svg.e3e3744c.png",
+    "static/media/libre-logos.67250bd7.svg": "/static/media/libre-logos.67250bd7.svg",
+    "static/media/linkedIn-icon.68ac41e1.png": "/static/media/linkedIn-icon.68ac41e1.png",
+    "static/media/suitcase.e14b0bb3.png": "/static/media/suitcase.e14b0bb3.png",
+    "static/media/tutcode.ec4d5511.png": "/static/media/tutcode.ec4d5511.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ea61961.js",
+    "static/js/2.d1380e9b.chunk.js",
+    "static/css/main.8bcf0126.chunk.css",
+    "static/js/main.e99148f0.chunk.js"
+  ]
+}
